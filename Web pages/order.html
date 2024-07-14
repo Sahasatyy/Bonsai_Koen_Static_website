@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order</title>
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Products of Bonsai">
+        <meta name="author" content="Team 5">
+        <link rel="stylesheet" href="../CSS/Navbar.css"/>
+        <style>
+          /* css for search box  */
+          .search {
+              float:right;
+              padding: 20px;
+               }
+               /* css for navigation bar  */
+          .table{
+              background-color: white;
+              height: 50px;
+              
+          }
+          body{
+                      background-color: rgb(240, 247, 240);
+                      font: 1em sans-serif;
+          }
+        </style>
+    </head>
+
+<body>
+  <!-- navigation bar  -->
+  <div class="navbar">
+    <nav style="text-align:center;font-family:'Times New Roman', Times, serif;font-size:xx-large;border:4px solid;">
+
+ <table class="topnav" width="100%">
+        <tr>
+    <th><a href="../index.html" title="Go Home."><img src="../pictures/bonsai logo.png" alt="Bonsai plant." width="100" height="100"></a></th>
+        
+       
+                <th><a href="Products.html" title="Go To Products.">Products</a></th>
+      
+      
+                 <th><a href="Blog.html" title="Go To Blogs.">Blog</a></th>
+       
+       
+                <th><a href="Research.html" title="Go To Research.">Research</a></th>
+       
+        
+                <th><a href="About Us.Html" title="Go To About Us Page.">About Us</a></th>
+ 
+        </tr>
+     </table>          
+</nav>
+</div>
+   <div style="text-align: center;">
+   <div class="search"> <!-- search box created  -->
+       <input type="text" placeholder="Search" style="width: 400px; height: 45px;"/>  <!-- css added to search box  -->
+       <a href="order.html"><img src="../pictures/mart.png" style="height: 30px;"></a>   <!-- linking image with html page -->
+   </div> 
+       <br>
+       <br>
+       <br>
+       <br>
+       <div>
+  <h3>Please fill the form to place order.</h3>
+  <!-- creating form  -->
+    <form name="Form" onsubmit="order()">
+    <p>First Name: <input type="text" name="firstname" placeholder="Type..."></p>
+    <p>Last Name: <input type="text" name="lastname" placeholder="Type..."></p>
+    <p>Location: <input type="text" name="location" placeholder="Type..."></p>
+    <p>Phone Number: <input type="text" name="phonenumber" placeholder="Type..."></p>  <!-- for choosing options  -->
+    <p>Trees: <br><br><input type="radio" name="product" checked><a href="azalea.html" style="text-decoration:none;color: black;">Azalea Bonsai Tree</a>
+      <br><input type="radio" name="product" checked><a href="chinese.html" style="text-decoration:none;color: black;">Chinese Elm Bonsai Tree</a>
+      <br><input type="radio" name="product" checked><a href="juniper.html" style="text-decoration:none;color: black;">Juniper Bonsai Tree</a>
+      <br><input type="radio" name="product" checked><a href="goldengate.html" style="text-decoration:none;color: black;">Golden Gate Ficus</a>
+      <br><input type="radio" name="product"  checked><a href="jade.html" style="text-decoration:none;color: black;">Jade Bonsai Tree</a>
+      <br><input type="radio" name="product"  checked><a href="boxwood.html" style="text-decoration:none;color: black;">Boxwood Bonsai</a>
+      <br><input type="radio" name="product"  checked><a href="holly.html" style="text-decoration:none;color: black;">Holly Goshiki Bonsai</a>
+      <br><input type="radio" name="product"  checked><a href="sago.html" style="text-decoration:none;color: black;">Sago Palm Bonsai</a>
+      <br><input type="radio" name="product"  checked><a href="promegranate.html" style="text-decoration:none;color: black;">Pomegranate Bonsai</a>
+      <br><input type="radio" name="product"  checked><a href="rockjuniper.html" style="text-decoration:none;color: black;">Rock Juniper Bonsai Tree</a>
+      <p>Seeds:</p>
+      <input type="radio" name="product"  checked><a href="pine.html" style="text-decoration:none;color: black;">Japanese Black Pine Bonsai Seed</a>
+      <br><input type="radio" name="product"  checked><a href="elm.html" style="text-decoration:none;color: black;">Corkbark Elm Bonsai Seed</a>
+      <br><input type="radio" name="product"  checked><a href="cherry.html" style="text-decoration:none;color: black;">Japanese Flowering Cherry Bonsai Seed</a>
+      <p>Tools:</p>
+      <input type="radio" name="product"  checked><a href="cherry.html" style="text-decoration:none;color: black;">Master Grade Stainless Steel Knob Cutter</a>
+      <br><input type="radio" name="product"  checked><a href="knife.html" style="text-decoration:none;color: black;">Ryuga Bonsai Grafting Knife</a>
+      <br><input type="radio" name="product"  checked><a href="hook.html" style="text-decoration:none;color: black;">Basic Root Hook</a>
+      <p>Soil:</p>
+      <input type="radio" name="product"  checked><a href="kanuma.html" style="text-decoration:none;color: black;">Kanuma Small Grain</a>
+      <br><input type="radio" name="product"  checked><a href="akadama.html" style="text-decoration:none;color: black;">Akadama Medium Grain</a>
+      <br><input type="radio" name="product"  checked><a href="lava.html" style="text-decoration:none;color: black;">Lava Rock Small Grain</a>
+      <p>Sets:</p>
+      <input type="radio" name="product"  checked><a href="juniperkit.html" style="text-decoration:none;color: black;">Juniper Kit Set</a>
+      <br><input type="radio" name="product"  checked><a href="tea.html" style="text-decoration:none;color: black;">Flowering Tea Tree Kit</a>
+      <br><input type="radio" name="product"  checked><a href="goldenkit.html" style="text-decoration:none;color: black;">Golden Gate Ficus Kit</a>
+      
+    </p>
+    
+    <p><input type="submit" value="Order"></p>
+    </form>
+  </div>
+    <script>
+      /* js which shows when the order form is completely filled or incompletely. */
+      function order(){
+        var fname = document.forms["Form"]["firstname"].value;
+        var lname = document.forms["Form"]["lastname"].value;
+        var locate= document.forms["Form"]["location"].value;
+        var product= document.forms["Form"]["product"].value;
+        var phone = document.forms["Form"]["phonenumber"].value;
+        if (fname == "" || lname == "" || locate == "" || phone == ""){
+          alert("Please fill the form.");
+        }
+        else {
+          alert("Your order is registered.");
+        }
+      }
+    </script>
+<footer style="text-align: center;">
+  <P><i>Copyright 2022-2023. All Rights Reserved. Bonsai Kōen and all it's rights are reserved by Bonsai Plants and Co.</i></p>
+
+</footer>
+<footer style="text-align: center;">
+  <img src="../pictures/bonsai logo.png" alt="logo" style="height: 100px;">
+</footer>
+</body>
+</html>

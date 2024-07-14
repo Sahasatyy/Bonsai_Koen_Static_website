@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Products</title>
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Products of Bonsai">
+        <meta name="author" content="Team 5">
+        <link rel="stylesheet" href="../CSS/Navbar.css"/>
+    <style>
+     body,html{
+      height:100%;
+     }
+       
+     .best{text-align: center; /* css for card  */
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          background-color: rgb(121, 121, 211);
+          width:370px;
+          height: 40px;
+          font-size: 20px;
+
+        }
+        .product{
+            display: flex;
+        }
+        .card {  /* css for card  */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center; 
+            flex:100%; 
+          }
+          .price {  /* css for card  */
+            color: rgb(50, 39, 61);
+            font-size: 20px;
+            text-align: center;
+          }
+          
+          .card button {  /* css for card  */
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+          }
+          .cart {  /* css for card  */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 250px;
+            margin-bottom: auto;
+            text-align: center; 
+            flex:100%;
+        background-color: rgb(169, 201, 169);
+        font-size: 22px;
+  }
+    .sell {  /* css for card  */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      height: 50px;
+      margin: auto;
+      text-align: center; 
+      font-size: 20px; 
+    background-color: rgb(37, 35, 35);
+  color: whitesmoke;}
+
+     /* css for search box  */
+    .search {  
+        float:right; 
+        padding: 20px;
+         }
+         /* css for navigation bar  */
+    .table{
+        background-color: white; 
+        height: 50px;
+        
+    }
+    body{
+                background-color: rgb(240, 247, 240);
+                font: 1em sans-serif;
+    }
+    /* background of the page  */
+    .back  
+        {
+          background-image: url(pictures/back.jpg); 
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+
+        }
+    </style>   
+    </head>
+    <body>
+      <div class="back"> <!-- for background of the page  -->
+       <div>
+        <!-- navigation bar  -->
+        <div class="navbar">
+          <nav style="text-align:center;font-family:'Times New Roman', Times, serif;font-size:xx-large;border:4px solid;">
+
+       <table class="topnav" width="100%">
+              <tr>
+          <th><a href="../index.html" title="Go Home."><img src="../pictures/bonsai logo.png" alt="Bonsai plant." width="100" height="100"></a></th>
+              
+             
+                      <th><a href="Products.html" title="Go To Products.">Products</a></th>
+            
+            
+                       <th><a href="Blog.html" title="Go To Blogs.">Blog</a></th>
+             
+             
+                      <th><a href="Research.html" title="Go To Research.">Research</a></th>
+             
+              
+                      <th><a href="About Us.Html" title="Go To About Us Page.">About Us</a></th>
+       
+              </tr>
+           </table>          
+      </nav>
+      </div>
+            </div>
+            <div class="search"> <!-- search box created  -->
+                <input type="text" placeholder="Search" style="width: 400px; height: 45px;"/> <!-- css added to search box  -->
+                <a href="order.html"><img src="../pictures/mart.png" style="height: 30px;"></a>  <!-- linking image with html page -->
+            </div> 
+             <br>
+             <br>
+             <br>
+              <br>
+              <br>
+            <div>
+            <p class="sell"> <!-- css for the text  -->
+                <b>Weekend Dicount ।।। 10% on Best Sellings Tree</b></p><!-- discription of product  -->
+            </div>
+            <br>
+            <br>
+            <div class="best"> <!-- css for the text  -->
+            <p>
+              <h2 id="section-2">Best Sellings</h2></p>
+            </div>
+            <br>
+            <br>
+            <!-- cards are created for each different products  -->
+            <div class="product"><!-- gives css to the cards  -->
+            <div class="card"> <!-- for creating cards  -->
+              <a href="azalea.html"><img src="../pictures/Azalea1.jpg" alt="Azalea" style="width:100%;"></a><!-- gives css to the product image  -->
+              <h1>Azalea Bonsai <br>Tree</h1>
+              <p class="price"><del>Rs.4000</del> <ins>Rs.3600</ins></p>
+              <p>
+                Better to provide some shade during hottest time of the day in summer. <!-- discription of product  -->
+              </p>
+              <div onclick="myFunction()"><!-- for alert message  -->
+              <button>Add to Cart</button>
+                </div>
+                
+              
+            </div>
+            <!-- css for the product card  -->
+            <div class="card">
+                <a href="chinese.html"><img src="../pictures/chinese1.jpg" alt="Chinese" style="width:100%;"></a><!-- gives css to the product image  -->
+                <h1>Chinese Elm Bonsai Tree</h1>
+                <p class="price"><del>Rs.4000</del> <ins>Rs.3600</ins></p>
+                <p>Strongest one, can be kept indoor and outdoor.</p><!-- discription of product  -->
+                <div onclick="myFunction()"> <!-- for alert message  -->
+                  <button>Add to Cart</button>
+                    </div>
+              </div>  
+              <!-- css for the product card  -->
+              <div class="card">
+                <a href="juniper.html"><img src="../pictures/juniper1.jpg" alt="Juniper" style="width:100%;"></a><!-- gives css to the product image  -->
+                <h1>Juniper Bonsai Tree</h1>
+                <p class="price"><del>Rs.4000</del> <ins>Rs.3600</ins></p>
+                <p>Tolerate indoor growth with suitable temperature and humidity.</p><!-- discription of product  -->
+                <div onclick="myFunction()"> <!-- for alert message  -->
+                  <button>Add to Cart</button>
+                    </div>
+              </div> 
+            </div> 
+            <br><!-- breaking line  -->
+            <br>
+            <div > <!-- css for the text  -->
+               <h1 style="text-align: center;"><a id="section-3">Bonsai Trees</a><br></h1> 
+            </div>
+            <div class="product">
+            <div class="cart"> <!-- table created -->
+                <a href="#section-3"  style="text-decoration:none;color: black;">TREES</a><br>
+                <a href="seed.html#section-2" style="text-decoration:none;color: black;"><p>SEEDS</p></a>
+                <a href="tools.html#section-2" style="text-decoration:none;color: black;"><p>TOOLS</p></a>
+                <a href="soil.html#section-2" style="text-decoration:none;color: black;"><p>SOIL</p></a>
+                <a href="sets.html#section-2" style="text-decoration:none;color: black;"><p>SETS</p></a>
+            </div>
+            <div class="card"> <!-- css for the product cards  -->
+                <a href="goldengate.html"><img src="../pictures/goldengate2.jpg" alt="goldengate" style="width:100%;height: 270px;"></a><!-- gives css to the product image  -->
+                <h1>Golden Gate <br>Ficus</h1>
+                <p class="price">Rs.2000</p>
+                <p>Most hardy species for indoor and outdoor.</p><!-- discription of product  -->
+                <div onclick="myFunction()"><!-- for alert message  -->
+                  <button>Add to Cart</button>
+                    </div>
+              </div> 
+              <div class="card"> <!-- css for the product cards  -->
+                <a href="promegranate.html"><img src="../pictures/promo4.jfif" alt="promegranate" style="width:100%;height: 270px;"></a><!-- gives css to the product image  -->
+                <h1>Pomegranate Bonsai</h1>
+                <p class="price">Rs.1900</p>
+                <p>Most popular species, mostly for outdoors.</p><!-- discription of product  -->
+                <div onclick="myFunction()"> <!-- for alert message  -->
+                  <button>Add to Cart</button>
+                    </div>
+              </div> 
+              <div class="card"> <!-- css for the product cards  -->
+                <a href="rockjuniper.html"><img src="../pictures/rock4.jpg" alt="Rock Juniper" style="width:100%;height: 270px;"></a><!-- gives css to the product image  -->
+                <h1>Rock Juniper Bonsai Tree</h1>
+                <p class="price">Rs.3500</p>
+                <p>Popular species, can color itself of the larger one.</p><!-- discription of product  -->
+                <div onclick="myFunction()"> <!-- for alert message  -->
+                  <button>Add to Cart</button>
+                    </div>
+              </div> 
+            </div>
+            <br><!-- breaking line  -->
+            <br>
+            <div class="product"> <!-- Gives css to the product cards-->
+                <div class="card"><!-- css for the product cards  -->
+                    <a href="jade.html"><img src="../pictures/jade1.jpg" alt="Jade" style="width:100%;height:270px;"></a><!-- gives css to the product image  -->
+                    <h1>Jade Bonsai <br>Tree</h1>
+                    <p class="price">Rs.2600</p>
+                    <p>For indoor but during months of summer outdoor is best.</p><!-- discription of product  -->
+                    <div onclick="myFunction()"> <!-- for alert message  -->
+                      <button>Add to Cart</button>
+                        </div>
+                  </div> 
+                <div class="card"> <!-- css for the product cards  -->
+                    <a href="boxwood.html"><img src="../pictures/boxwood1.jpg" alt="Boxwood" style="width:100%;height:270px;"></a><!-- gives css to the product image  -->
+                    <h1>Boxwood <br>Bonsai</h1>
+                    <p class="price">Rs.2700</p>
+                    <p> Minimal sunlight so better to keep<br> indoor.</p><!-- discription of product  -->
+                    <div onclick="myFunction()"> <!-- for alert message  -->
+                      <button>Add to Cart</button>
+                        </div>
+                  </div> 
+                  <div class="card"> <!-- css for the product cards  -->
+                    <a href="holly.html"><img src="../pictures/holly1.jpg" alt="Holly" style="width:100%;height:270px;"></a><!-- gives css to the product image  -->
+                    <h1>Holly Goshiki Bonsai</h1>
+                    <p class="price">Rs.2500</p>
+                    <p>Displays pink tinges of coloration during spring and winter.<!-- discription of product  -->
+                      </p>
+                      <div onclick="myFunction()"> <!-- for alert message  -->
+                        <button>Add to Cart</button>
+                          </div>
+                  </div> 
+                  <div class="card"> <!-- css for the product cards  -->
+                    <a href="sago.html"><img src="../pictures/sago2.jpg" alt="sago" style="width:100%;height:270px;"></a><!-- gives css to the product image  -->
+                    <h1>Sago Palm <br>Bonsai</h1>
+                    <p class="price">Rs.2400</p>
+                    <p> Slow growth make best choice for busy office.</p>
+                    <div onclick="myFunction()"> <!-- for alert message  -->
+                      <button>Add to Cart</button>
+                        </div>
+                  </div> 
+                </div>
+                <div style="float:right;padding-top: 10px;"> <!-- jumps to the top of the page  -->
+                <a href="#section-2"><img src="../pictures/top.png" style="width: 20px;height: 20px;"></a><br><!-- gives css to the product image  -->
+              </div>
+              <script> /* js for every card when added cart is clicked.  */
+                function myFunction() {
+                  var popup = document.getElementById("myPopup");
+                  alert("Product added to cart.");
+                }
+                </script>
+                </div>
+                 <footer style="text-align:center">
+                  <p style="font-style:italic;">Copyright 2022-2023. All Rights Reserved. Bonsai Kōen and all it's rights are reserved by Bonsai Plants and Co.</p>
+              </footer>
+              <footer style="text-align:center">
+                  <img src="../pictures/bonsai logo.png" alt="footer" style="height: 100px;">
+              </footer>
+                     
+            </body>
+                
+    </html>

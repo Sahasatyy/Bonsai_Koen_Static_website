@@ -1,0 +1,35 @@
+.navbar { /*css for aligning the position of navigation bar*/
+    
+    margin-top:0%;
+    text-align: center;
+    padding: 0px 100px;
+   
+   }
+
+
+.topnav{ /*css for the background of the nav bar*/
+    
+    overflow:hidden;
+    background-color:#333;
+}
+.topnav a{ /*css for the contents in the nav bar*/
+      
+    color:#f2f2f2;
+    text-align:center;
+    padding:10px 16px;
+    text-decoration:none;
+    font-size:17px;
+}
+.topnav a:hover{ /*css when the links are hovered on*/
+    background-color:#ddd;
+    color:black;
+
+}
+.topnav a:active{ /*css when the links are active*/
+    background-color:#04AA6D;
+    color:white;
+}
+.topnav a:visited{ /*css when the links have been visited*/
+    background-color:aqua;
+    color:green;
+}

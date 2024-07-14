@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bonsai Kōen/Home</title>
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="E-commerce website for Japanese Bonsai plants">
+        <meta name="description" content="Bonsai plants, Buy plants, Buy plants online, Japanese plants"
+        <meta name="author" content="Binayak Tiwari, Sohil Maharjan, Sahas Amatya, Nishan Shrestha">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Navbar.css">
+        <style type="text/css">
+
+            body,html{ /*Defining height of the page*/
+                
+              height:100%;
+                
+            }
+           *{
+            box-sizing: border-box;
+            background-color:transparent;
+           }
+          .background /* css for background*/
+              {
+                  background-image: url(pictures/bonsai1.jpg); 
+                  height:100%;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  filter:blur(8px);
+                -webkit-filter:blur(8px);
+              }
+              .slider-wrapper /* css for slider wrap*/
+              {
+                  display:flex;
+                  flex-direction: column;
+                  flex:20%;
+                  position:relative;
+                  max-width:48rem;
+                  margin: 0 auto;
+                
+                  
+                
+              }
+              .image /* css to manage images in the slider*/
+              {
+                  display:flex;
+                  flex: 1 1 100%;
+                  width:30%;
+              }
+                
+
+              .slider /* css for image slider*/
+              {
+              display:flex;
+              flex-direction:column;
+              align-items:center;
+              width:100%;
+              height:300px;
+              overflow:hidden;
+              border-radius: 100px;
+              box-shadow: 0px 0px 10px 1px rgba(52, 52, 54, 0.459);
+              background-color: transparent;
+              }
+
+                .header{ /*css for header content*/
+                  font-size: 40px;
+                  text-align: center;
+                  color:black;
+                }
+              .bg-text /*css for items on top of blurred background*/
+              {
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color:transparent; /* Black w/opacity/see-through */
+                color:white;
+                font-weight: bold;
+                font-size: 14px;
+                position: absolute;
+                top: 26%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+              }
+              .bg-text2  /*css for items on top of blurred background*/
+              {
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color:transparent; /* Black w/opacity/see-through */
+                color:black;
+                font-weight:  lighter;
+                font-size: 16px;
+                position: absolute;
+                top: 61%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+                background-color: transparent;
+              }
+              .bg-text3  /*css for items on top of blurred background*/
+              {
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color:transparent; /* Black w/opacity/see-through */
+                color:rgba(216, 217, 204, 0.863);
+                font-weight: normal;
+                font-size: 22px;
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                width: 70%;
+                height:100px;
+                padding: 20px;
+                text-align: center;
+              }
+              .bg-button  /*css for the button to external link*/
+              {
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color:transparent; /* Black w/opacity/see-through */
+                font-weight: bold;
+                font-size: 14px;
+                position: absolute;
+                top: 72%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                text-align: center;
+              }
+        </style>
+    </head>
+    <body>
+            <div class="background"></div> <!--background of the webpage-->
+            <div class="bg-text"><!--contents on the webpage-->
+            <header>
+            <div class="navbar"><!--navigation bar-->
+            <nav style="text-align:center;font-family:'Times New Roman', Times, serif;font-size:xx-large;border:4px solid;">
+
+         <table class="topnav" width="100%">
+                <tr>
+            <th><a href="index.html" title="Go Home."><img src="pictures/bonsai logo.png" alt="Bonsai plant." width="100" height="100"></a></th>
+                
+               
+                        <th><a href="Web pages/Products.html" title="Go To Products.">Products</a></th>
+              
+              
+                         <th><a href="Web pages/Blog.html" title="Go To Blogs.">Blog</a></th>
+               
+               
+                        <th><a href="Web pages/Research.html" title="Go To Research.">Research</a></th>
+               
+                
+                        <th><a href="Web pages/About Us.Html" title="Go To About Us Page.">About Us</a></th>
+         
+                </tr>
+             </table>
+            
+                
+                   
+        </nav>
+        </div>
+        </header>
+        <header><!--Name of website-->
+        <h1 class="header">Bonsai Kōen</h1>
+        </header>
+            <!--Image slider-->
+            <div class="slider-wrapper">
+            <div class="slider">
+            <div class="image" id="img" >
+           <img src="e.jpg">
+        </div>
+        </div>
+        </div>
+        </section>
+        </div>
+            <div class="bg-text2"><!--Bonsai history-->
+            <p> The word “Bon-sai” (often misspelled as bonzai or banzai) is a Japanese term which, literally translated, means “planted in a container”. This art form is derived from an ancient Chinese horticultural practice, part of which was then redeveloped under the influence of Japanese Zen Buddhism.</br>
+                Although the word Bon-sai is Japanese, the art it describes originated in the Chinese empire. By the year 700 AD the Chinese had started the art of ‘pun-sai’ using special techniques to grow dwarf trees in containers.</br>
+                Over the years many styles to classify Bonsai trees have been advanced, closely resembling circumstances in nature. These styles are open to personal interpretation and creativity, meaning that trees do not necessarily need to conform to any form.</br>
+                The art of growing Bonsai trees originates in the Chinese Empire, and like many related art-forms, the Japanese copied and adapted it during the Kamakura period. These related art forms include stone appreciation (Suiseki), keeping koi fish (Nishikigoi) and Japanese gardening. 
+                
+                
+            </p>
+        </div>
+        <div class="bg-text3"><!--Advertisement-->
+            <p>Buy your own Bonsai plant through our website and become a part of its thousands of years of legacy.
+            </br>
+            Go to our product page and choose from varieties of bonsai plants specially grown for both home and office environment.
+            </p>
+        </div>
+        <div class="bg-button"><!--Button for External link-->
+            <button onclick="window.location.href='https://www.bonsaiempire.com/origin';" style="width:10%;height:30px;text-align:center;color:white; border-radius: 100px;margin: 40px;">More Info</button>
+            </div>
+        
+        
+        <div>
+        <script> //Js for image slider//
+            var slides = ['a.jpg' , 'b.jpg' , 'c.jpg' ,'d.jpg', 'e.jpg'];
+            var x=0;
+            var imgs = document.getElementById('img');
+            setInterval(slider, 3000);
+
+
+           function slider()
+           {
+            if(x < slides.length)
+            {
+        
+            x = x + 1;
+           }
+           else
+           {
+             x = 1;
+           }
+           imgs.innerHTML= "<img src="+slides[x-1]+">";
+        }
+        </script>
+        </div>
+        <footer style="text-align:center"><!--Footer for the webpage-->
+            <p style="font-style:italic;">Copyright 2022-2023. All Rights Reserved. Bonsai Kōen and all it's rights are reserved by Bonsai Plants and Co.</p>
+        </footer>
+        <footer style="text-align:center">
+            <img src="pictures\bonsai logo.png" alt="footer" style="height: 100px;">
+        </footer>
+               
+    </body>
+</html>

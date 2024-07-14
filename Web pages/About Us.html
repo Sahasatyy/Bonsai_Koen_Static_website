@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title> ABOUT US </title>
+        <meta name= "Description" content = "Just Basic HTML" />
+        <meta name= "keywords" content= "HTML" />
+        <meta name= "author" content="Islington" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--meta http-equiv="refresh" content ="2" /-->
+        <link rel="stylesheet" href="../CSS/Navbar.css">
+        <style>
+            span {
+                background-color: none;
+                font-family:arial;
+                color:none;
+                font-size:18px;
+            }
+                .heading{
+                    font-family: Monotype Corsiva;
+                }
+                .heading:hover{
+                    color:blue ;
+
+                }
+                .heading:active{
+                    color:purple;
+                }
+                #bonz_fig{
+                    display: flex;
+                    justify-content: center;
+
+                }
+                
+
+                /*The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+ *,html,body{
+                margin: 0;
+                padding: 0;
+                box-sizing:border-box;
+            }
+            .search_bar{
+                    text-align: center;
+                    float: right;
+                    width: 200px;
+                    height: 28px;
+                    border-radius: 15px;
+            }
+                .search_bar:hover{
+                     border: 1px solid;
+              padding: 10px;
+              box-shadow: 5px 10px #888888;
+                        }
+            .flip-card-front,.flip-card-back{
+                    position: absolute;
+                    width: auto;    
+                    text-align: center;
+                    height: 300px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+            }
+            .flip-card-back{
+                background-color: cadetblue;
+            }
+            .flip-card{
+                display:inline-block;
+                margin:40px 25px;
+            }
+            .bod_style{
+
+                width:300px;
+                height:300px;
+            }
+            .flip_card_container{
+                width: auto;
+                height: 375px;
+                text-align: center;
+                padding: 50px 0px;
+            }
+            .abt_us_txt{
+                    text-align: center;
+                    display: block;
+                    margin: auto;
+                    font-size: 40pt;
+                    font-family: math;
+                    font-weight: 900;
+                    padding: 30px;
+/*                    background-color: cadetblue;*/
+                    width: 96%;
+                    color:black;
+            }
+            .slider{
+                object-fit: contain ;
+            }
+      /*  section{
+            background-color: lightblue;    
+        } */
+        .body_para{
+            background-image:url("bb.jpg");
+            background-repeat: no-repeat;
+            background-position: unset;
+            background-size: auto;
+
+        }
+        .heading_flipcard, .person_fc{
+            margin-bottom: 20px;
+
+        }
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 150%;
+          padding: 0px 20px;
+          margin-left: 20px;
+        }
+         .container {
+          padding: 2px 16px;
+        }
+        .txt-card_section{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        }
+        .fa-copyright{
+                padding: 15px;
+        }
+        .foot{
+            text-align: center;
+            font-family: Sans-serif;
+            font-weight: 900;
+            margin-top:36px;
+        }
+        </style>    
+    </head>
+<body>
+    <section class = "body_para">  
+            <header>
+                <div class="navbar"><!--navigation bar-->
+                    <nav style="text-align:center;font-family:'Times New Roman', Times, serif;font-size:xx-large;border:4px solid;">
+        
+                 <table class="topnav" width="100%">
+                        <tr>
+                    <th><a href="../index.html" title="Go Home."><img src="../pictures/bonsai logo.png" alt="Bonsai plant." width="100" height="100"></a></th>
+                        
+                       
+                                <th><a href="Products.html" title="Go To Products.">Products</a></th>
+                      
+                      
+                                 <th><a href="Blog.html" title="Go To Blogs.">Blog</a></th>
+                       
+                       
+                                <th><a href="Research.html" title="Go To Research.">Research</a></th>
+                       
+                        
+                                <th><a href="About Us.Html" title="Go To About Us Page.">About Us</a></th>
+                 
+                        </tr>
+                     </table>          
+                </nav>
+                </div>
+                 <div id ="demo">
+            </div>
+             <span class = "abt_us_txt"><u>ABOUT US</u></span>
+            </header>
+            <section class = "txt-card_section">
+                 <div class="card pos-lt">
+                  <img src="../pictures/pic1.jfif" alt="Avatar" style="width:99%">
+                  <div class="container">
+                    <h4 style = "text-align: center; font-size: 24px;"><b>Flower Bonzai</b></h4> 
+                    <!-- <p>Architect & Engineer</p>  -->
+                </div>
+            </div>
+                        <p style="padding: 50px;text-align: justify;font-size: large;">
+                          We take great pride in this incredible journey of our's to provide our customers with their fated plants. This whole business of plants and smiles started out as just the wild idea of four college graduates and now we have come so far into this journey that the start seems vivid. Over the years we have supplied many households and offices with different types of bonsai plants. So, we have been blessed enough to have successful cooperation with many clients. This journey was started just to be a method of income. But now it has turned into something much more than just about capital. We have connected to so many people and truly feel blessed for these connections. We hope that this trend continues for many years to come.
+                   
+                        </p>        
+                            <div class="card pos-rt">
+                  <img src="../pictures/bon_plant.jfif" alt="Avatar" style="width:99%">
+                  <div class="container">
+                    <h4 style = "text-align: center; font-size: 24px;"><b>Flower Bonzai</b></h4> 
+                    <!-- <p>Architect & Engineer</p>  -->
+                </div>
+            </div>
+
+
+             </section>
+
+         <section> 
+         
+         <div class="flip_card_container">
+                <!-- <div class="row"> -->
+                    <!-- <div class="col"> -->
+                                   <div class="flip-card">
+                            <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="../pictures/director.jpeg" class ="bod_style" alt="Avatar">
+                             </div>
+                             <div class="flip-card-back">
+                                      <h1 class = "heading_flipcard"><u>DIRECTOR</u></h1>
+                                      <p class = "person_fc" style = "font-size:34px"> Binayak Tiwari</p>
+                                      <p>
+                                        E-mail: binayaktiwari010@gmail.com
+                                        Contact No.: 9867543020
+                                      </p>
+                            </div>
+                                </div>
+                                    </div>
+
+                    <!-- </div> -->
+                    <!-- <div class="col"> -->
+                                    <div class="flip-card">
+                            <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="../pictures/managing_director.jpg" alt="Avatar" class = "bod_style">
+                             </div>
+                             <div class="flip-card-back">
+                                      <h1 class = "heading_flipcard"> <u> MANAGING DIRECTOR</u></h1>
+                                      <p  class = "person_fc" style = "font-size:34px">Sohil Maharjan</p>
+                                      <p>
+                                        E-mail: sohilmhrjn1@gmail.com
+                                      </br>
+                                        Contact No. : 9584367580
+
+                                      </p>
+                            </div>
+                                </div>
+                                    </div>
+
+         <!--  </div>
+                    <div class = "col"> -->
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                          <img src="../pictures/assistant_manager.jpg" alt="Avatar" class = "bod_style">
+                                         </div>
+                                         <div class="flip-card-back">
+                                                  <h1 class = "heading_flipcard"><u>ASSISTANT MANAGER</u></h1>
+                                                  <p  class = "person_fc" style = "font-size:34px">Nishan Shrestha</p>
+                                                  <p>
+                                                    E-mail: nishanshrestha211@gmail.com
+                                                  </br>
+                                                    Contact No.: 9675843270
+                                                  </p>
+                                        </div>
+                                </div>
+                             </div>
+                             <div class="flip-card">
+                                <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                          <img src="../pictures/sales_manager.jpg" alt="Avatar" class = "bod_style">
+                                         </div>
+                                         <div class="flip-card-back">
+                                                  <h1 class = "heading_flipcard"><u>SALES MANAGER</u></h1>
+                                                  <p class = "person_fc" style = "font-size:34px">Sahas Amatya</p>
+                                                  <p>
+                                                    E-mail: sahasamty@gmail.com
+                                                  </br>
+                                                    Contact No. : 958472610
+                                                  </p>
+                                        </div>
+                                </div>
+                             </div>
+            <!--         </div>
+                </div> -->
+            </div>
+        
+        </section>
+        <p style = "margin-top: 50px;font-size: large;text-align: justify;">
+          If you have any qualms or complaints regarding our products please feel free to give us our feed back. We appreciate constructive criticism from our customers. Thank you! for helping us to make our business better than before.
+       </p>
+    <script type="text/javascript">     
+        document.getElementById("demo").innerHTML = Date();
+    </script>
+    </section>
+    <footer style="text-align:center"><!--Footer for the webpage-->
+        <p style="font-style:italic;">Copyright 2022-2023. All Rights Reserved. Bonsai Kōen and all it's rights are reserved by Bonsai Plants and Co.</p>
+    </footer>
+    <footer style="text-align:center">
+        <img src="../pictures\bonsai logo.png" alt="footer" style="height: 100px;">
+    </footer>          
+</body>
+
+</html>     
